@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Jasmine</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">*MY DEEP APOLOGISE AND GENUNIE FEELINGS</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Hey Jas !<br />
+				I don't even know how to start.<br />
+				But I wanna start by expressing my sincerest apologies for my disrespectful behavior towards you.<br/>
+				<span class="comments">//Reflecting on my actions, </span><br />
+				I deeply regret the hurt I caused, which led to you distancing yourself from me.<br />
+				<span class="comments">// I deeply regret any miscommunication that may have occurred when I asked for nudes. It was never my intention to use you, and I apologize for any misunderstanding it may have caused.</span><br />
+				I understand how my behavior may have made you feel the need to create that space between us. <br>
+				And it saddens me to see that connection fading.<br />
+				<span class="comments">// I yearn for the distance to dissipate because I value our bond immensely.</span><br />
+				I want you to feel comfortable, safe, and happy around me.<br />
+				I promise to be mindful of your feelings and treat you with the utmost respect and care.<br />
+				You promised me that we could start anew<br />
+				I long for the things to return the way they were before<br />
+				<span class="comments">// when we used to FaceTime every day</span><br />
+				<span class="comments">// play games together</span><br />
+				<span class="comments">// share laughter</span><br />
+				I truly miss those moments, <br />
+				and they hold a special place in my heart. <br/>
+				<br>
+				Also I know that expressed myself in code might be a bit weird or cringe <br/>
+				but please understand that I poured a lot of effort and time into creating that animation. <br/>
+				I wanted to show you how much I care about you because you mean everything to me. <br/>
+	
+				<br>
+				<br>
+				I genuinely hope you can find it in your heart to forgive me.<br />
+				I want you to know that my feelings for you are real<br />
+				I care about you deeply, <br/>
+				and I love you a lot a lot a lot <br/>
+				I am really grateful and lucky to have you in my life <br/>
+	
+				<br>
+				<br>
+				Lastly, <br/>
+				I must admit that I despise this distance that has crept between us. <br/>
+				and I long for the opportunity to demonstrate in person just how much I care and love you. <br/>
+	
+				<br>
+				<br>
+				<span class="comments">// Thank you for taking the time to read this heartfelt apology. I hope we can find a way to reconnect and restore the beautiful bond we once shared.</span><br />
+	
+				<br>
+				<br>
+				Now If you want to hug me or forgive me you can touch the heart below<br />
+				<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					CAN WE START AGAIN?
+					
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- CYRUS</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 8, 5);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
